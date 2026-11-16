@@ -15,7 +15,7 @@ export async function onRequestGet(context) {
   const saved = (await loadRecipes(env)).map.get(id);
   const r = saved && customToRecipe(saved);
   if (!r || pageProblem(r)) {
-    return new Response('<!doctype html><meta charset="utf-8"><title>Not found · Supper Board</title><p>No such recipe. <a href="/#library">Open the Library</a></p>',
+    return new Response('<!doctype html><meta charset="utf-8"><title>Not found · HelloSupper</title><p>No such recipe. <a href="/#library">Open the Library</a></p>',
       { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } });
   }
   return new Response(recipePage(r, new URL(request.url).origin), {

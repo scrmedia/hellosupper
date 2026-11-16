@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// A small command-line tool for the board's shared state. Handy for you, and written so an AI agent (OpenClaw, Claude Code
+// A small command-line tool for your HelloSupper board's shared state. Handy for you, and written so an AI agent (OpenClaw, Claude Code
 // or similar) can run it: every command prints plain text, or JSON with --json.
 //
 //   node scripts/board.mjs [status] [--week 2026-01-05] [--json]   this week's votes, likely winners, locked-in dinners

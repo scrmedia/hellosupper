@@ -30,10 +30,10 @@ function loginPage(wrong) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Supper Board">
+<meta name="apple-mobile-web-app-title" content="HelloSupper">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-<title>Supper Board</title>
+<title>HelloSupper</title>
 <style>
   body{margin:0;min-height:100vh;display:grid;place-items:center;background:#fbf6ef;color:#2b2420;
        font:17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -46,7 +46,7 @@ function loginPage(wrong) {
 </style></head>
 <body><form method="post" action="/__login">
 <img src="/apple-touch-icon.png" alt="">
-<h1>Supper Board</h1>
+<h1>HelloSupper</h1>
 <input type="password" name="password" placeholder="Password" autocomplete="current-password" autofocus required>
 <button type="submit">Open</button>
 ${wrong ? '<p>That\'s not it - try again.</p>' : ''}

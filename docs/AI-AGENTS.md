@@ -1,4 +1,4 @@
-# Using Supper Board with an AI agent
+# Using HelloSupper with an AI agent
 
 You don't need an AI agent. Everything on the board works by tapping. An agent is handy for the fiddly bits: typing in a recipe from a photo, telling the board you're away on Thursday, or turning the shopping list into an online order.
 
@@ -60,11 +60,11 @@ The tool tells you which categories the recipe landed in and whether anything is
 [OpenClaw](https://docs.openclaw.ai) is a personal AI assistant that runs on your own computer and that you can message from your phone. It can run commands and use a web browser for you.
 
 1. Install OpenClaw by following its [documentation](https://docs.openclaw.ai).
-2. Put your Supper Board folder somewhere OpenClaw can reach, such as inside its workspace folder.
-3. Tell it, once: *"My meal-planning board is in the supper-board folder. Read README.md and docs/AI-AGENTS.md. The board is at https://our-dinners.pages.dev and the password is ... Keep the password somewhere safe, not in the project folder."*
+2. Put your HelloSupper folder somewhere OpenClaw can reach, such as inside its workspace folder.
+3. Tell it, once: *"My meal-planning board is in the hellosupper folder. Read README.md and docs/AI-AGENTS.md. The board is at https://our-dinners.pages.dev and the password is ... Keep the password somewhere safe, not in the project folder."*
 4. Then just ask, from wherever you message it:
    - *"What did we vote for this week?"*
-   - *"Add this to Supper Board"* and send a link, a screenshot of a recipe, or a photo of a cookbook page.
+   - *"Add this to HelloSupper"* and send a link, a screenshot of a recipe, or a photo of a cookbook page.
    - *"We're out on Wednesday, so three dinners this week."*
    - *"Send me this week's shopping list."*
 
@@ -75,7 +75,7 @@ OpenClaw can also do your online shop in your browser. See "Optional: how one ho
 [Claude Code](https://docs.anthropic.com/en/docs/claude-code) is an AI assistant that works in a terminal, inside a project folder.
 
 1. Install it by following its documentation.
-2. Open a terminal in your Supper Board folder, set `SB_URL` and `SB_PASSWORD` as above, and type `claude`.
+2. Open a terminal in your HelloSupper folder, set `SB_URL` and `SB_PASSWORD` as above, and type `claude`.
 3. Ask in plain English:
    - *"Help me set this up. Follow docs/SETUP.md."*
    - *"Add this recipe to the board: <paste the recipe>"*

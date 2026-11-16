@@ -1,4 +1,4 @@
-// Supper Board shortlist rules: one place for "what goes on the weekly vote". Shared by the board (the first list of
+// HelloSupper shortlist rules: one place for "what goes on the weekly vote". Shared by the board (the first list of
 // the week, "Show me more" and "Not for us") and by scripts/board.mjs. ES module, no dependencies apart from categories.js.
 // The rules come from data/config.json ("rules"), so you can change them without touching code:
 //   "rules": { "maxMinutes": 45, "exclude": ["fish"], "maxSameProtein": 3, "maxSlowCooker": 1 }

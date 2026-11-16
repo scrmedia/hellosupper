@@ -32,14 +32,14 @@ export function recipePage(r, origin = '') {
 <meta name="referrer" content="no-referrer">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#fbf6ef">
-<title>${h(r.name)} · Supper Board</title>
+<title>${h(r.name)} · HelloSupper</title>
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/recipe.css">
 <script type="application/ld+json">${ldScriptText(ld)}</script>
 </head>
 <body>
 <main class="recipe">
-<p class="back"><a href="/#recipe/${h(encodeURIComponent(r.id))}">‹ Open in Supper Board</a></p>
+<p class="back"><a href="/#recipe/${h(encodeURIComponent(r.id))}">‹ Open in HelloSupper</a></p>
 ${ld.image ? `<img class="hero" src="${h(r.image)}" alt="${h(r.name)}" width="1200" height="800" referrerpolicy="no-referrer">` : r.emoji ? `<div class="hero-emoji" aria-hidden="true">${h(r.emoji)}</div>` : ''}
 <h1>${h(r.name)}</h1>
 ${r.subtitle ? `<p class="subtitle">${h(r.subtitle)}</p>` : ''}

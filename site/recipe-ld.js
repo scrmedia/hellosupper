@@ -1,4 +1,4 @@
-// schema.org Recipe JSON-LD for a Supper Board recipe - what Safari on Apple HomeView reads to build its step-by-step
+// schema.org Recipe JSON-LD for a HelloSupper recipe - what Safari on Apple HomeView reads to build its step-by-step
 // cooking view (https://webkit.org/blog/18608/safari-on-apple-homeview/). ES module, no dependencies: used by
 // scripts/sync-site.mjs (static /recipe/<id> pages), site/recipe-page.js and app.js (the open recipe sheet).
 // Only fields we actually have are emitted; nothing is made up (no cookTime unless it's in the data, no ratings, etc).

@@ -1,4 +1,4 @@
-// Supper Board recipe categories - ONE place for "which categories is this recipe in", shared by the board (Library chips),
+// HelloSupper recipe categories - ONE place for "which categories is this recipe in", shared by the board (Library chips),
 // scripts/sync-site.mjs (precomputed `cats` in recipes-index.json), scripts/board.mjs, functions/api/state.js (explicit
 // categories on added recipes), shortlist.js (the rules) and recipe-ld.js (JSON-LD `keywords`). ES module, no dependencies.
 // A recipe can be in many categories (Chinese + Under 20 min + Chicken). Rules prefer leaving a recipe out over guessing.

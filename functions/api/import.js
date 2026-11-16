@@ -106,7 +106,7 @@ export async function onRequestPost({ request }) {
     res = await fetch(u.href, {
       redirect: 'follow',
       signal: AbortSignal.timeout(10000),
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; SupperBoard/1.0; personal recipe import)', Accept: 'text/html,application/xhtml+xml' },
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; HelloSupper/1.0; personal recipe import)', Accept: 'text/html,application/xhtml+xml' },
     });
   } catch { return json({ error: "Couldn't reach that page. Check the link and try again." }, 502); }
   if (!res.ok) return json({ error: `That page answered with an error (${res.status}). Some sites block automatic reading - you can type the recipe in instead.` }, 502);

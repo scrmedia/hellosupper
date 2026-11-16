@@ -1,5 +1,5 @@
 {
-  "name": "supper-board",
+  "name": "hellosupper",
   "version": "1.0.0",
   "private": true,
   "description": "A shared weekly dinner board: vote on the week's dinners, cook from the recipe, take the shopping list to the shop.",
@@ -10,6 +10,6 @@
     "sync": "node scripts/sync-site.mjs",
     "dev": "node scripts/sync-site.mjs && npx wrangler pages dev site --port 8788 --kv STATE --binding SITE_PASSWORD=letmein",
     "check": "node scripts/check-site.mjs",
-    "deploy": "node scripts/sync-site.mjs && npx wrangler pages deploy site --project-name supper-board"
+    "deploy": "node scripts/sync-site.mjs && npx wrangler pages deploy site --project-name hellosupper"
   }
 }

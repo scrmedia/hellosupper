@@ -1,4 +1,4 @@
-# Setting up Supper Board
+# Setting up HelloSupper
 
 This guide assumes no technical knowledge. It takes about 30 to 45 minutes the first time. Everything here is free.
 
@@ -37,7 +37,7 @@ node --version
 The easiest way:
 
 1. Sign in to GitHub and open this project's page.
-2. Click **Fork** (top right), then **Create fork**. You now have your own copy at `github.com/<your-name>/supper-board`.
+2. Click **Fork** (top right), then **Create fork**. You now have your own copy at `github.com/<your-name>/hellosupper`.
 3. On your copy's page, click the green **Code** button, then **Download ZIP**. Unzip it somewhere easy to find, such as your Documents folder.
 
 If you already use Git, you can `git clone` your fork instead.
@@ -50,7 +50,7 @@ Open `data/config.json` in any text editor (TextEdit on a Mac, Notepad on Window
 
 ```json
 {
-  "title": "Supper Board",
+  "title": "HelloSupper",
   "people": [
     { "id": "alex", "name": "Alex" },
     { "id": "sam", "name": "Sam" }
@@ -94,7 +94,7 @@ The first time, it asks to install a Cloudflare tool called `wrangler`. Type `y`
 
 Open **http://localhost:8788** in your browser. You'll see the sign-in page:
 
-<img src="images/sign-in.png" width="260" alt="The Supper Board sign-in page with a password box">
+<img src="images/sign-in.png" width="260" alt="The HelloSupper sign-in page with a password box">
 
 Type `letmein` and press **Open**. This password only exists on your computer. You'll choose a real one in the next step.
 
@@ -114,14 +114,14 @@ The board keeps votes, your own recipes and the week's settings in a small store
 
 1. Sign in at [dash.cloudflare.com](https://dash.cloudflare.com).
 2. In the left-hand menu, open **Storage & Databases**, then **KV** (it may be under **Workers KV**).
-3. Click **Create** (or **Create a namespace**). Name it `supper-board-state` and save.
+3. Click **Create** (or **Create a namespace**). Name it `hellosupper-state` and save.
 
 ### Option A: Connect your GitHub copy (recommended)
 
 1. First, put your settings on GitHub. On your fork's page, open `data/config.json`, click the pencil icon, make the same changes as in step 3, and click **Commit changes**.
 2. In Cloudflare, open **Workers & Pages** and click **Create** (or **Create application**).
 3. Choose the **Pages** tab, then **Connect to Git** (or **Import an existing Git repository**).
-4. Connect your GitHub account when asked, and choose your `supper-board` repository.
+4. Connect your GitHub account when asked, and choose your `hellosupper` repository.
 5. On the build settings screen, enter:
    - **Project name:** anything you like, for example `our-dinners`. This becomes your address: `our-dinners.pages.dev`.
    - **Production branch:** `main`
@@ -145,7 +145,7 @@ The board keeps votes, your own recipes and the week's settings in a small store
    npm run deploy
    ```
 
-   The first time, it asks whether to create a new project. Say yes, give it a name (for example `our-dinners`) and use `main` as the production branch. If you chose a name other than `supper-board`, open `package.json` and change `--project-name supper-board` in the `deploy` line to your name first.
+   The first time, it asks whether to create a new project. Say yes, give it a name (for example `our-dinners`) and use `main` as the production branch. If you chose a name other than `hellosupper`, open `package.json` and change `--project-name hellosupper` in the `deploy` line to your name first.
 
 ### Step 5.2: Connect the storage and set your password (both options)
 
@@ -153,7 +153,7 @@ The board keeps votes, your own recipes and the week's settings in a small store
 2. Open **Settings**, then **Bindings** (on older screens: **Functions**, then **KV namespace bindings**).
 3. Click **Add**, choose **KV namespace**, and enter:
    - **Variable name:** `STATE` (exactly that, in capitals)
-   - **KV namespace:** `supper-board-state`
+   - **KV namespace:** `hellosupper-state`
 4. Save. If it asks about **Production** and **Preview**, add it to both.
 5. Still in **Settings**, open **Variables and Secrets** (or **Environment variables**). Click **Add**:
    - **Type:** Secret (or tick **Encrypt**)

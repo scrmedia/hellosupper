@@ -1,8 +1,8 @@
-# Supper Board
+# HelloSupper
 
 **Forked from [weezerhunter/Supper-Board](https://github.com/weezerhunter/Supper-Board)** (MIT licence). The original is a shared kitchen board for a two-person household, built by talking to Claude. This version keeps that idea and the licence, and adds weekly voting, a searchable recipe library, recipe pages for Safari's cooking view, and a password-protected copy you can host for free on Cloudflare. Thank you to the original authors.
 
-Supper Board is a small web app for deciding what's for dinner this week. Everyone in the house votes on a shortlist from your recipe library. The winners go on **This week**, each with a recipe you can cook from on your phone, and the ingredients turn into one **shopping list**.
+HelloSupper is a small web app for deciding what's for dinner this week. Everyone in the house votes on a shortlist from your recipe library. The winners go on **This week**, each with a recipe you can cook from on your phone, and the ingredients turn into one **shopping list**.
 
 It's free, it has no adverts or tracking, and you run your own copy. You don't need to be a developer. If you can follow a recipe, you can follow the [setup guide](docs/SETUP.md).
 
@@ -74,7 +74,7 @@ You don't need any of this. Plenty of people just take the list to the supermark
 If you use an AI agent that can work a web browser (OpenClaw can), you can ask it to do the online shop for you:
 
 1. Give it your past orders once, so it learns your regulars: the milk, bread and bin bags you buy every week. Downloading or copying a few recent orders from your supermarket's website is enough.
-2. Each week, tell it something like: *"Get this week's Supper Board shopping list, add our usual essentials, and fill my basket on the supermarket website. Don't check out. Show me the basket first."*
+2. Each week, tell it something like: *"Get this week's HelloSupper shopping list, add our usual essentials, and fill my basket on the supermarket website. Don't check out. Show me the basket first."*
 3. Check the basket yourself, change anything you like, and pay yourself.
 
 Keep the last step in your own hands. Don't give an agent your card details or let it pay without you checking.

@@ -1,4 +1,4 @@
-// Supper Board - vanilla JS, no build step. Reads the recipe library and settings from ./data/ (written by
+// HelloSupper - vanilla JS, no build step. Reads the recipe library and settings from ./data/ (written by
 // scripts/sync-site.mjs). Votes, the week's list, locked-in dinners, shopping extras, "Not for us" and your own recipes are
 // shared between phones through /api/state (Cloudflare Pages Function + KV). Recipe and shopping tick-offs stay on each
 // device (localStorage).
