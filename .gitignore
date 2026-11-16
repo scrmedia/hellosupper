@@ -1,0 +1,9 @@
+node_modules/
+.wrangler/
+.cache/
+.dev.vars
+.env*
+.DS_Store
+*.log
+site/data/
+site/recipe/

@@ -1,0 +1,22 @@
+/* Static recipe pages (/recipe/<id>) - plain, readable, no fixed bars, works on a short square screen (HomeView 448x364). */
+:root { --bg: #fbf6ef; --ink: #2c2420; --ink-2: #6f625a; --ink-3: #a3958b; --line: #eee3d6; --accent: #c2593f;
+  --serif: ui-serif, "New York", "Iowan Old Style", Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color-scheme: light; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 var(--sans); }
+.recipe { max-width: 760px; margin: 0 auto; padding: 12px 18px calc(32px + env(safe-area-inset-bottom)); }
+.back a { display: inline-block; padding: 10px 0; min-height: 44px; color: var(--accent); font-weight: 600; text-decoration: none; }
+.hero { display: block; width: 100%; height: auto; max-height: 50svh; object-fit: cover; border-radius: 18px; background: #efe5d9; }
+h1 { font: 600 28px/1.15 var(--serif); margin: 16px 0 4px; }
+h2 { font: 600 21px var(--serif); margin: 26px 0 10px; }
+h2 small, li small { font: 500 14px var(--sans); color: var(--ink-3); }
+.subtitle, .desc { color: var(--ink-2); margin: 0 0 10px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--ink-2); margin: 8px 0 12px; }
+.ingredients { list-style: none; padding: 0; margin: 0; }
+.ingredients li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.steps { padding-left: 1.4em; margin: 0; }
+.steps li { padding: 8px 0 12px; }
+.note { color: var(--ink-3); font-size: 14px; margin-top: 20px; }
+.note a { color: inherit; }
+.hero-emoji { display: grid; place-items: center; height: 160px; font-size: 84px; border-radius: 18px; background: #f3e7d8; }

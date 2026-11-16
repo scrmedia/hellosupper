@@ -1,0 +1,19 @@
+{
+  "title": "Supper Board",
+  "people": [
+    { "id": "alex", "name": "Alex" },
+    { "id": "sam", "name": "Sam" }
+  ],
+  "dinnersPerWeek": 4,
+  "optionsPerWeek": 10,
+  "servings": 2,
+  "showSampleRecipes": true,
+  "siteUrl": "",
+  "rules": {
+    "maxMinutes": null,
+    "exclude": [],
+    "maxSameProtein": 3,
+    "maxSlowCooker": 2,
+    "recentWeeks": 3
+  }
+}
